@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z-Index Position</title>
+    <style>
+        .main-div{
+            position: absolute;
+        }
+        .red-box{
+            width: 500px;
+            height: 100px;
+            background-color: red;
+            z-index: 2;
+            top: 100px;
+        }
+        .blue-box{
+            width: 100px;
+            height: 400px;
+            background-color: blue;
+            z-index: 3;
+            left: 200px;
+        }
+        .green-box{
+            width: 400px;
+            height: 300px;
+            background-color: green;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="red-box">
+            RED BOX
+        </div>
+        <div class="blue-box">
+            BLUE BOX
+        </div>
+        <div class="green-box">
+            GREEN BOX
+        </div>
+    </div>
+</body>
+</html>

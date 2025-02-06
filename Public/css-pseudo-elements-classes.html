@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements Classes</title>
+    <style>
+        ol{
+            list-style: none;
+            display: flex;
+        }
+        li::before{
+            content: "--->";
+        }
+        li:first-child::before{
+            content: none;
+        }
+        li:nth-child(even){
+            color: red;
+        }
+        li:nth-child(odd){
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>HOME</li>
+        <li>About</li>
+        <li>Electronics</li>
+        <li>Contact</li>
+        <li>Help</li>
+    </ol>
+</body>
+</html>

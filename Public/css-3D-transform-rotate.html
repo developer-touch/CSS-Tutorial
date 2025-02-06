@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+        .back{
+            background-image: url("assets/ear-speaker.jpg");
+            background-size: 500px 500px;
+            border: 2px solid black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            transition: 3s;
+            border: 2px dotted tomato;
+        }
+        img:hover{
+            transform: rotate3d(40,60,100,360deg);
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back">
+            <img src="assets/bluthooth.png">
+        </div>
+    </div>
+</body>
+</html>

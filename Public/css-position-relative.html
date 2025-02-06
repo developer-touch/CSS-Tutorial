@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Relative</title>
+    <style type="text/css">
+        #container{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            position: static;
+            margin-left: 100px;
+        }
+        #child{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        Parent Container
+        <div id="child">
+            Child Container 
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style type="text/css">
+        input[type="button"]{
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+            width: 100px;
+        }
+        input[type="password"]{
+            background-color: yellow;
+        }
+        input[type="text"]{
+            background-color: greenyellow;
+        }
+        p[id]{
+            color: red;
+        }
+        div[class="first-div"]{
+            background-color: tomato;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>User Name</dt>
+            <dd><input type="text" placeholder="enter user name"></dd>
+            <dt>Password</dt>
+            <dd><input type="password" placeholder="enter user password"></dd>
+        </dl>
+        <input type="button" value="Login">
+        <input type="button" value="Cancel"">
+    </form>
+    <div class="first-div">
+        <p>Para-1</p>
+        <p id="pare-2">Para-2</p>
+        <p>Para-3</p>
+        <p id="para-3">Para-4</p>
+        <p>Para-5</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo Elements Classes</title>
+    <style>
+        p{
+            text-align: justify;
+        }
+        p::first-letter{
+            font-size: 40px;
+            font-family: Arial;
+            color: red;
+            float: left;
+        }
+        p::first-line{
+            color: tomato;
+        }
+        p::selection{
+            background-color: red;
+            color: white;
+        }
+        #name::placeholder{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <dt>Name</dt>
+        <dd><input type="text" id="name" placeholder="enter your name"></dd>
+    </div>
+    <p>
+        The title element represents the document's title or name. Authors should use titles that identify their documents even when they are used out of context, for example in a user's history or bookmarks, or in search results. The document's title is often different from its first heading, since the first heading does not have to stand alone when taken out of context.
+        The title element represents the document's title or name. Authors should use titles that identify their documents even when they are used out of context, for example in a user's history or bookmarks, or in search results. The document's title is often different from its first heading, since the first heading does not have to stand alone when taken out of context.
+        The title element represents the document's title or name. Authors should use titles that identify their documents even when they are used out of context, for example in a user's history or bookmarks, or in search results. The document's title is often different from its first heading, since the first heading does not have to stand alone when taken out of context.
+    </p>
+</body>
+</html>

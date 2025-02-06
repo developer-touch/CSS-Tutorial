@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inheritance</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            background-color: yellow;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .inner-div-1{
+            border: 2px solid red;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px tomato;
+            background-color: green;
+            padding: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="inner-div-1">
+            <h2>Inner Div-1</h2>
+        </div>
+        <div class="inner-div-1">
+            <h2>Inner Div-2</h2>
+        </div>
+        <div class="inner-div-1">
+            <h2>Inner Div-3</h2>
+        </div>
+    </div>
+</body>
+</html>

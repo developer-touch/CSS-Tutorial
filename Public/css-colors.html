@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+    <style type="text/css">
+        #container{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            background-color: yellow;
+            border: 2px solid red;
+            border-radius: 2px;
+        }
+        .inner-child{
+            height: 200px;
+            color: white;
+            border: 2px solid tomato;
+            padding: 20px;
+            margin: 40px;
+            background-color: rgb(137, 177, 107);
+            box-shadow: 2px 3px 2px red;
+            text-align: center;
+            border-radius: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="inner-child">
+            <h2>Inner child-1</h2>
+        </div>
+        <div class="inner-child">
+            <h2>Inner child-2</h2>
+        </div>
+        <div class="inner-child">
+            <h2>Inner child-3</h2> 
+        </div>
+        <div class="inner-child">
+            <h2>Inner child-4</h2>
+        </div>
+    </div>
+</body>
+</html>

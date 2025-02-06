@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID SELECTOR</title>
+    <style type="text/css">
+        #child-container-1, #child-container-2{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            padding: 20px;
+            margin: 30px;
+            height: 300px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+        }
+        #child-container-1 > #div-1{
+            background-color: red;
+        }
+        #child-container-1 > #div-2{
+            background-color: blue;
+        }
+        #child-container-1 > #div-3{
+            background-color: orange;
+        }
+        #child-container-1 > #div-4{
+            background-color: tomato;
+        }
+         #child-container-2 > #div-1{
+            background-color: tomato;
+        }
+        #child-container-2 > #div-2{
+            background-color: orange;
+        }
+        #child-container-2 > #div-3{
+            background-color: blue;
+        }
+        #child-container-2 > #div-4{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="parent-container">
+       <div id="child-container-1">
+            <div id="div-1">
+                <span>HTML</span>
+            </div>
+            <div id="div-2">
+                <span>CSS</span>
+            </div>
+            <div id="div-3">
+                <span>JAVASCRIPT</span>
+            </div>
+            <div id="div-4">
+                <span>BOOTSTRAP</span>
+            </div>
+       </div>
+       <div id="child-container-2">
+            <div id="div-1">
+                <span>CORE JAVA</span>
+            </div>
+            <div id="div-2">
+                <span>ADVANCE JAVA</span>
+            </div>
+            <div id="div-3">
+                <span>SPRING</span>
+            </div>
+            <div id="div-4">
+                <span>SPRING BOOT</span>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
